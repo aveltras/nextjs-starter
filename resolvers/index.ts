@@ -2,10 +2,10 @@ import { Resolvers } from "types/graphql";
 
 const resolvers: Resolvers = {
   Query: {
-    test: (root, args, context) => {
+    test: () => {
       return 2;
     },
-    tada: (root, args, context) => {
+    tada: () => {
       return "tada";
     },
   },
