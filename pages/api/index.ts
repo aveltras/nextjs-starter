@@ -7,7 +7,7 @@ import redis from "redis";
 import createRedisStore from "connect-redis";
 import resolvers from "resolvers";
 
-const typeDefs = readFileSync("./schema.graphql", "utf-8");
+const typeDefs = readFileSync("./schema.gql", "utf-8");
 
 const apolloServer = new ApolloServer({
   typeDefs,
