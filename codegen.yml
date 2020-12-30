@@ -1,0 +1,17 @@
+overwrite: true
+schema: "./schema.graphql"
+documents: "./pages/**/*.graphql"
+generates:
+  types/graphql.ts:
+    config:
+      useIndexSignature: true
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+  types/queries.ts:
+    config:
+      withHooks: true
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-urql
