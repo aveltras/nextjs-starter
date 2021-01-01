@@ -3,7 +3,6 @@ with import <nixpkgs> { };
 {
   shell = mkShell {
     buildInputs = [
-      docker-compose
       nixfmt
       nodejs
       nodePackages.pnpm
