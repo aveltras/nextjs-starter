@@ -33,6 +33,8 @@ handler.use(apolloServer.createHandler({ path: "/api" }));
 
 export default handler;
 
+console.log("init api");
+
 export const config = {
   api: {
     bodyParser: false,

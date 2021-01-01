@@ -1,0 +1,67 @@
+let
+  pkgs = import <nixpkgs> { };
+  yarn2nixGithub = import (builtins.fetchTarball {
+    url = "https://github.com/nix-community/yarn2nix/archive/master.tar.gz";
+  }) { inherit pkgs; };
+in with pkgs;
+with yarn2nixGithub; {
+  app = mkYarnPackage {
+    name = "myapp";
+    src = ./.;
+    packageJSON = ./package.json;
+    yarnLock = ./yarn.lock;
+    # preInstall = "yarn build";
+    buildPhase = "yarn build";
+    dontStrip = true;
+    # postFixup = "mv $out/libexec/my-app/deps/my-app/.next $out/bin/";
+    # distPhase = ''
+    #   cat <<EOF > $out/bin/server
+    #   #!${runtimeShell}
+    #   exec $out/libexec/my-app/node_modules/.bin/next start $out/libexec/my-app/deps/my-app
+    #   EOF
+    #   chmod +x $out/bin/server
+    # '';
+    # installPhase = ''
+    #   mkdir -p $out/bin $out/build
+    #   ls -al $(pwd)/deps
+    #   mv $(pwd)/deps/my-app/.next $out/build
+    # '';
+    # cat <<EOF > $out/bin/server
+    # #!${runtimeShell}
+    # exec $out/libexec/my-app/node_modules/.bin/next start $out/build
+    # EOF
+    # chmod +x $out/bin/server
+
+    # installPhase = ''
+    #   mkdir -p $out/bin $out/build
+    #   exec $(pwd)/node_modules/.bin/next build
+    #   cat <<EOF > $out/bin/server
+    #   #!${runtimeShell}
+    #   exec $out/libexec/my-app/node_modules/.bin/next start $out/build
+    #   EOF
+    #   chmod +x $out/bin/server
+    # '';
+
+    # buildPhase = ''
+    #   export PATH=$(pwd)/node_modules/.bin:$PATH
+    #   export NODE_ENV=production
+    #   next build $(pwd)/deps/my-app
+    # '';
+  };
+  shell = mkShell {
+    buildInputs = [
+
+      docker-compose
+      nixfmt
+      nodejs
+      nodePackages.node2nix
+      nodePackages.pnpm
+      yarn
+      yarn2nixGithub.yarn2nix
+
+      (writeShellScriptBin "dbmate" ''
+        ${dbmate}/bin/dbmate $@ && zapatos
+      '')
+    ];
+  };
+}

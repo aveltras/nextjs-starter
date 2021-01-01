@@ -1,0 +1,67 @@
+Arguments: 
+  /nix/store/z8x5ywyjv4h7x4wgydby7laks62wnwar-nodejs-14.15.3/bin/node /nix/store/yv6zlw858r1wnq9iqwcw3yy26cqyszm0-yarn-1.22.10/bin/yarn
+
+PATH: 
+  /home/romain/Code/nextjs-starter/node_modules/.bin:/nix/store/j37555sj2w3xsql3f8qrwbaim7pv67hg-bash-interactive-4.4-p23/bin:/nix/store/kg1ck8dgi10yqwmm20gi7gx5m3sr5jdq-patchelf-0.12/bin:/nix/store/b96dqbx6pri2xp2xxlq6i269virrdaw6-gcc-wrapper-9.3.0/bin:/nix/store/wmzmnnrj780268ybilmcfyd3grn5qzi6-gcc-9.3.0/bin:/nix/store/7niy0yd0ygv0wa05kl5l46x6fdflpwf1-glibc-2.32-10-bin/bin:/nix/store/8gsdifv2q3hnq42v7ddk38nmiagmjd6c-coreutils-8.32/bin:/nix/store/ip7xkk70anay3k7bp2cr6aqdg0mcdja2-binutils-wrapper-2.31.1/bin:/nix/store/kcp0y7g1ir4dxq2gqz687i4vb7gqy8s0-binutils-2.31.1/bin:/nix/store/7niy0yd0ygv0wa05kl5l46x6fdflpwf1-glibc-2.32-10-bin/bin:/nix/store/8gsdifv2q3hnq42v7ddk38nmiagmjd6c-coreutils-8.32/bin:/nix/store/97jl9cc5r4a0rdrz590r301a7vcknbfg-docker-compose-1.27.4/bin:/nix/store/jdp800qwb3v330ggl6iq722ww96q2444-python3-3.8.6/bin:/nix/store/gmk1fhx0d18fhd785y5bwar9ysg309la-python3.8-chardet-3.0.4/bin:/nix/store/qmgrk295w6pcninsnfz5l9igsq31w0hr-python3.8-websocket_client-0.57.0/bin:/nix/store/rx14jrg23gvw7fk3371198xsjb9mwc0p-python3.8-jsonschema-3.2.0/bin:/nix/store/slw55abg15fl316y1ii7p5vmjbxbn354-python3.8-distro-1.5.0/bin:/nix/store/x200jjq48anw4gxc0cnda3l5nm6sarv6-python3.8-python-dotenv-0.15.0/bin:/nix/store/0523hbzjghg657afgq893br0ipj80ip7-nixfmt-0.4.0/bin:/nix/store/z8x5ywyjv4h7x4wgydby7laks62wnwar-nodejs-14.15.3/bin:/nix/store/16mjk29mzyy6h7h0gfax265129qdxq5p-node_pnpm-5.13.5/bin:/nix/store/yv6zlw858r1wnq9iqwcw3yy26cqyszm0-yarn-1.22.10/bin:/nix/store/6z0qwn7mpcnmzglmf8fdiv0s4i38r89s-yarn2nix-1.0.0/bin:/nix/store/f2gmw6ndwnk4043qpb28mwqifalf0z8n-dbmate/bin:/nix/store/8gsdifv2q3hnq42v7ddk38nmiagmjd6c-coreutils-8.32/bin:/nix/store/khvalqldk47cx8d54gik9jrqsinzmwng-findutils-4.7.0/bin:/nix/store/6wzkn6gdpj3psqjgbfx858wd3dhanj12-diffutils-3.7/bin:/nix/store/q3ppqi1npx3vnsdlk8hk9s4p3adc4ygp-gnused-4.8/bin:/nix/store/134fdr0yrl4wgrrasxn9d3s8vzcm5lxq-gnugrep-3.6/bin:/nix/store/y9rbfriadb1gq5l8hjm8476cvjjq38ww-gawk-5.1.0/bin:/nix/store/gm4gjb3pkyxyj54kb4fizldvr60cpb2l-gnutar-1.32/bin:/nix/store/svhnwsc7rbzrfcfn0y1hsry1m8yi0y88-gzip-1.10/bin:/nix/store/pj616ldh4sbmqj7ad6dhmfcawfzgqpqf-bzip2-1.0.6.0.1-bin/bin:/nix/store/6mic0pcmp4va0ghx7hn5wl3jl4ll4h2q-gnumake-4.3/bin:/nix/store/4l7wsi6h6283194r6fqy1731qxlagq62-bash-4.4-p23/bin:/nix/store/wav2vx6iaxvkmzcwzwa127p6jri4rqdz-patch-2.7.6/bin:/nix/store/hzvfm203h5argiylhqprnpwznxxbdmj3-xz-5.2.5-bin/bin:/home/romain/.nix-profile/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/romai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/romai/AppData/Local/Programs/Microsoft VS Code/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/home/romain/.cache/yarn/v6/npm-has-flag-4.0.0-944771fd9c81c81265c4d6941860da06bb59479b-integrity/node_modules/has-flag/index.d.ts' -> '/home/romain/Code/nextjs-starter/node_modules/@graphql-codegen/cli/node_modules/has-flag/index.d.ts'
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "dev": "concurrently \"next\" \"graphql-codegen --watch\" "
+    },
+    "devDependencies": {
+      "@emotion/babel-plugin": "^11.1.2",
+      "@graphql-codegen/cli": "^1.20.0",
+      "@graphql-codegen/typescript": "^1.20.0",
+      "@graphql-codegen/typescript-operations": "^1.17.13",
+      "@graphql-codegen/typescript-resolvers": "^1.18.1",
+      "@graphql-codegen/typescript-urql": "^2.0.3",
+      "@types/connect-redis": "^0.0.16",
+      "@types/express-session": "^1.17.3",
+      "@types/isomorphic-fetch": "^0.0.35",
+      "@types/node": "^14.14.16",
+      "@types/pg": "^7.14.7",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "concurrently": "^5.3.0",
+      "typescript": "^4.1.3"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.1.4",
+      "apollo-server-micro": "^2.19.1",
+      "connect-redis": "^5.0.0",
+      "express-session": "^1.17.1",
+      "graphql": "^15.4.0",
+      "graphql-tag": "^2.11.0",
+      "isomorphic-fetch": "^3.0.0",
+      "next": "^10.0.4",
+      "next-connect": "^0.9.1",
+      "next-urql": "^2.1.1",
+      "pg": "^8.5.1",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-is": "^17.0.1",
+      "redis": "^3.0.2",
+      "urql": "^1.11.4",
+      "zapatos": "^3.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
